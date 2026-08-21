@@ -26,6 +26,14 @@ const SECTION_ICONS: Record<string, typeof Globe> = {
   social: Share2,
   trust: Shield,
   booking: MessageSquare,
+  trustbar: BarChart3,
+  services: Sparkle,
+  dentist: UserRound,
+  testimonials: Quote,
+  pricing: Receipt,
+  faqs: HelpCircle,
+  location: MapPin,
+  finalcta: Megaphone,
 };
 
 import {
