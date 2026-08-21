@@ -408,6 +408,30 @@ export default function WebsiteSettingsPage() {
                     </div>
                   </div>
                 </div>
+                <div className="space-y-2">
+                  <Label className="text-xs font-medium">Background video link (optional)</Label>
+                  <Input className="bg-muted/30 border-border/40" placeholder="https://..." value={get("hero_video_url")} onChange={(e) => set("hero_video_url", e.target.value)} />
+                  <p className="text-[10px] text-muted-foreground">If set, the video plays behind the headline instead of the photo.</p>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="space-y-2">
+                    <Label className="text-xs font-medium">Main button wording</Label>
+                    <Input className="bg-muted/30 border-border/40" placeholder="Book an appointment" value={get("hero_cta_label")} onChange={(e) => set("hero_cta_label", e.target.value)} />
+                  </div>
+                  <div className="space-y-2">
+                    <Label className="text-xs font-medium">What the button does</Label>
+                    <Select value={get("hero_cta_type") || "booking"} onValueChange={(v) => set("hero_cta_type", v)}>
+                      <SelectTrigger className="bg-muted/30 border-border/40">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="booking">Open the booking form</SelectItem>
+                        <SelectItem value="whatsapp">Start a WhatsApp chat</SelectItem>
+                        <SelectItem value="call">Call the clinic</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
                 <Button className="bg-secondary hover:bg-secondary/90 shadow-lg shadow-secondary/20" onClick={() => handleSave()} disabled={updateClinic.isPending}>
                   {updateClinic.isPending ? "Saving..." : "Save changes"}
                 </Button>
