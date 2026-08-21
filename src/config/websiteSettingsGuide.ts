@@ -240,6 +240,215 @@ export const websiteGuideSections: GuideSection[] = [
       },
     ],
   },
+  {
+    id: "trustbar",
+    label: "Trust bar & stats",
+    navHint: "Years, patients, rating",
+    title: "Trust bar & statistics",
+    blurb:
+      "The small strip of numbers that reassures visitors: years of experience, patients treated, your rating and one extra figure of your choice.",
+    appears: "Thin band just under the homepage headline.",
+    steps: [
+      {
+        title: "Show or hide the strip",
+        body: "Use the switch to turn the whole band on or off. Turned off, none of the numbers appear.",
+      },
+      {
+        title: "Fill in the numbers",
+        body: "Write them exactly as you want them read, e.g. \"12+\", \"5,000+\", \"4.9\".",
+      },
+      {
+        title: "Extra figure",
+        body: "The last pair lets you add anything else, e.g. label \"Same-day slots\" with value \"Daily\".",
+      },
+      {
+        title: "Save",
+        body: "Press Save trust bar so the numbers go live.",
+      },
+    ],
+  },
+  {
+    id: "services",
+    label: "Service highlights",
+    navHint: "Service cards and why choose us",
+    title: "Service highlights & why choose us",
+    blurb:
+      "Short cards describing what you offer, plus the reasons patients should pick your clinic.",
+    appears: "Services overview cards and the \"Why choose us\" band on your homepage.",
+    steps: [
+      {
+        title: "Heading first",
+        body: "Write the title and subtitle shown above the service cards.",
+      },
+      {
+        title: "Add a card",
+        body: "Press Add service card, then type a short title and one line of description. Keep it to a few words.",
+      },
+      {
+        title: "Why choose us",
+        body: "The second list is your selling points, e.g. \"Painless treatment\" or \"Modern equipment\".",
+      },
+      {
+        title: "Remove and save",
+        body: "The bin icon removes a row. Press Save section when finished.",
+      },
+    ],
+  },
+  {
+    id: "dentist",
+    label: "Meet the dentist",
+    navHint: "Name, credentials, photo, bio",
+    title: "Meet the dentist",
+    blurb: "Introduce the person patients will actually see, with a photo and a short biography.",
+    appears: "\"Meet the dentist\" band on your homepage.",
+    steps: [
+      {
+        title: "Name and credentials",
+        body: "For example \"Dr Ada Obi\" and \"BDS, MSc Implantology\".",
+      },
+      {
+        title: "Photo",
+        body: "Paste the web address of a portrait photo, or upload it in the gallery first and copy its link.",
+      },
+      {
+        title: "Biography",
+        body: "Two or three sentences in a friendly tone. Mention experience and special interests.",
+      },
+      {
+        title: "Save",
+        body: "Press Save dentist profile to publish.",
+      },
+    ],
+  },
+  {
+    id: "testimonials",
+    label: "Testimonials",
+    navHint: "Patient quotes you write yourself",
+    title: "Patient testimonials",
+    blurb:
+      "Quotes from happy patients that you enter manually. These are separate from reviews collected through the app.",
+    appears: "Testimonials band on your homepage.",
+    steps: [
+      {
+        title: "Add a quote",
+        body: "Press Add testimonial, then fill in the patient's name and what they said.",
+      },
+      {
+        title: "Rating",
+        body: "Choose a star rating from 1 to 5. Leave it blank to hide the stars.",
+      },
+      {
+        title: "Only use real quotes",
+        body: "Ask the patient's permission before publishing their name.",
+      },
+      {
+        title: "Save",
+        body: "Press Save testimonials when done.",
+      },
+    ],
+  },
+  {
+    id: "pricing",
+    label: "Pricing",
+    navHint: "Price guide and what to expect",
+    title: "Price guide",
+    blurb:
+      "An optional list of common treatments with indicative prices, plus a note explaining what patients should expect.",
+    appears: "Pricing band on your homepage.",
+    steps: [
+      {
+        title: "Heading",
+        body: "Write the section title, e.g. \"Transparent pricing\".",
+      },
+      {
+        title: "Add a price row",
+        body: "Each row has a treatment name, a price as you want it displayed (e.g. \"From ₦25,000\") and an optional note.",
+      },
+      {
+        title: "What to expect",
+        body: "Use this longer box to explain consultations, payment plans or anything that affects the final cost.",
+      },
+      {
+        title: "Save",
+        body: "Press Save pricing to publish the list.",
+      },
+    ],
+  },
+  {
+    id: "faqs",
+    label: "FAQs",
+    navHint: "Common questions and answers",
+    title: "Frequently asked questions",
+    blurb: "Answer the questions new patients ask most, so they do not have to call.",
+    appears: "Expandable FAQ list near the bottom of your homepage.",
+    steps: [
+      {
+        title: "Add a question",
+        body: "Press Add question, then type the question exactly as a patient would ask it.",
+      },
+      {
+        title: "Write a short answer",
+        body: "Two or three sentences is plenty. Be specific about times, prices and what to bring.",
+      },
+      {
+        title: "Order matters",
+        body: "The first questions in the list appear first on the page, so put the most common ones at the top.",
+      },
+      {
+        title: "Save",
+        body: "Press Save FAQs to publish.",
+      },
+    ],
+  },
+  {
+    id: "location",
+    label: "Location & map",
+    navHint: "Map embed and directions link",
+    title: "Location & map",
+    blurb: "Show a map of your clinic and give patients a one-tap link for directions.",
+    appears: "Visit section of your public site.",
+    steps: [
+      {
+        title: "Map link",
+        body: "In Google Maps choose Share → Embed a map and copy the address inside src=\"...\". Paste it here.",
+      },
+      {
+        title: "Directions link",
+        body: "The normal Google Maps link to your clinic. Used by the \"Get directions\" button.",
+      },
+      {
+        title: "Save",
+        body: "Press Save location. Check the map preview on your public site afterwards.",
+      },
+    ],
+  },
+  {
+    id: "finalcta",
+    label: "Final call-to-action & footer",
+    navHint: "Closing invite and footer note",
+    title: "Final call-to-action & footer",
+    blurb:
+      "The last invitation to book at the bottom of the page, and the small print in your footer.",
+    appears: "Closing band and footer of your public site.",
+    steps: [
+      {
+        title: "Closing title",
+        body: "A direct invitation, e.g. \"Ready for a healthier smile?\"",
+      },
+      {
+        title: "Button wording",
+        body: "What the button says, e.g. \"Book your visit\". Keep it under four words.",
+      },
+      {
+        title: "Footer note",
+        body: "Small print under the footer links — registration numbers, a short line about the clinic, or opening note.",
+      },
+      {
+        title: "Save",
+        body: "Press Save closing section to publish.",
+      },
+    ],
+  },
 ];
 
 export const getGuideSection = (id: string) =>
