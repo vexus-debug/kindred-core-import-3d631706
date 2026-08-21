@@ -484,17 +484,17 @@ export default function WebsiteSettingsPage() {
               </CardHeader>
               <CardContent className="pt-4 space-y-3 max-w-lg">
                 {hours.map((h, i) => (
-                  <div key={h.day} className="flex items-center gap-3 p-2 rounded-lg hover:bg-accent/30 transition-colors">
-                    <span className="text-sm font-medium w-24">{h.day}</span>
+                  <div key={h.day} className="flex flex-wrap items-center gap-x-3 gap-y-2 p-2 rounded-lg hover:bg-accent/30 transition-colors">
+                    <span className="text-sm font-medium w-20 sm:w-24">{h.day}</span>
                     <Switch
                       checked={!h.closed}
                       onCheckedChange={(checked) => updateHour(i, "closed", !checked)}
                     />
                     {!h.closed ? (
                       <>
-                        <Input type="time" className="w-28 bg-muted/30 h-8 text-xs" value={h.open} onChange={(e) => updateHour(i, "open", e.target.value)} />
+                        <Input type="time" className="min-w-0 flex-1 basis-24 sm:flex-none sm:w-28 bg-muted/30 h-8 text-xs" value={h.open} onChange={(e) => updateHour(i, "open", e.target.value)} />
                         <span className="text-xs text-muted-foreground">to</span>
-                        <Input type="time" className="w-28 bg-muted/30 h-8 text-xs" value={h.close} onChange={(e) => updateHour(i, "close", e.target.value)} />
+                        <Input type="time" className="min-w-0 flex-1 basis-24 sm:flex-none sm:w-28 bg-muted/30 h-8 text-xs" value={h.close} onChange={(e) => updateHour(i, "close", e.target.value)} />
                       </>
                     ) : (
                       <span className="text-xs text-muted-foreground">Closed</span>
